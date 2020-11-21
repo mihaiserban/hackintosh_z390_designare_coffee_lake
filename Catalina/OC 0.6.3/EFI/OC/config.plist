@@ -1060,7 +1060,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>MLB</key>
-			<string>[REPLACME]HWY&amp;X</string>
+			<string>[REPLACEME]HWY&amp;X</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1070,9 +1070,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>[REPLACME]</string>
+			<string>[REPLACEME]</string>
 			<key>SystemUUID</key>
-			<string>[REPLACME]</string>
+			<string>[REPLACEME]</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

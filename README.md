@@ -56,7 +56,7 @@ Compute (GPU):
 
 #### **Customize the `config.plist`**
 
-The following fields have been replaced by `[REPLACME]` (for ease of Cmd+F):
+The following fields have been replaced by `[REPLACEME]` (for ease of Cmd+F):
 
 - `config.plist` > `PlatformInfo`
   - `SystemSerialNumber`

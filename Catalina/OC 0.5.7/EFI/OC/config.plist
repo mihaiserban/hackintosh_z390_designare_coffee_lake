@@ -675,7 +675,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>[REPLACME]</string>
+			<string>[REPLACEME]</string>
 			<key>ROM</key>
 			<data>uAmKvUmh</data>
 			<key>SpoofVendor</key>
@@ -683,9 +683,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>[REPLACME]</string>
+			<string>[REPLACEME]</string>
 			<key>SystemUUID</key>
-			<string>[REPLACME]</string>
+			<string>[REPLACEME]</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
