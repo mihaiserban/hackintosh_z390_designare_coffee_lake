@@ -40,7 +40,9 @@ Compute (GPU):
 ## **Functionality**
 
 #### **What works** 
-- Wi-Fi
+- AirDrop and other continuity features
+- Audio jacks (front and back)
+- Wi-Fi/Bluetooth
 - Shutdown / Restart / Sleep
 - USB 3.0/3/1
 - Thunderbold 3 (including charging and hotswapping)
@@ -49,9 +51,7 @@ Compute (GPU):
 - iMessage, etc.
 
 #### **What doesn't work**
-- Bluetooth
-- AirDrop and other continuity features
-- Audio jacks (front and back)
+
 ## **Installation**
 
 #### **Customize the `config.plist`**
@@ -76,19 +76,8 @@ This is by no means an extensive list. This is just some stuff unique to z390 BI
 The most important settings are:
   - CSM: disabled
   - SecureBoot: disabled
-  - iGPU (onboard graphics): disabled
   - Above 4G decoding: enabled
-
-## **About this custom EFI**
-
-#### **Most important differences from The Official Guide**
-
-- DevirtualiseMmio: `true` - add MmioWhitelist in case of `[EB|#LOG:EXITBS:START]` error
-- add `SSDT-Z390-DESIGNARE-TB3HP-V4.aml` ACPI
-- boot args `alcid=15 agdpmod=pikera shikigva=80 slide=0`
-- Adding the `HfsPlus.efi` driver
-- If you're having issues, be sure to enable debugging [as described in the OpenCore docs](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#debug), and also grab [the `DEBUG` version of OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases). For debugging help see the [Troubleshooting section of this page](https://github.com/baughmann/designaire-z390-intel-i9-9900k-opencore#troubleshooting).
-
+  - CFG Lock: disabled
 ## **Troubleshooting**
 
 - Check your `config.plist` against the corresponding version using [OpenCore Sanity Checker](https://opencore.slowgeek.com/).
@@ -96,6 +85,9 @@ The most important settings are:
 - check BIOS settings
 
 ## **Changelog**
+- **21 Nov 2020:**
+  - Redo EFI using [OC Gen X utility](https://github.com/Pavo-IM/OC-Gen-X)
+
 - **19 Nov 2020:**
   - Updated to macOS Big Sur from Catalina
   - Changed `slide=1` to `slide=0`
